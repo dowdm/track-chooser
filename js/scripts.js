@@ -9,7 +9,7 @@ $(document).ready(function(){
     var userName = $("#name").val();
 
 //logic for determining course//
-  $("#nameprint").text(userName);
+  // $("#nameprint").text(userName);
 
     if (userLike === 1) {
       if (userAffinity ===  3){
@@ -24,27 +24,10 @@ $(document).ready(function(){
           $("#outputTrack").text("CSS/React");
         }
     } else {
-        if (userArt !== 1)
-        $("#outputTrack").text("Java/Android");
-      } else {
-        $("#outputTrack").text("CSS/React");
-      }
+          $("#outputTrack").text("Java/Android");
+        }
+
 
     event.preventDefault();
-  });
-
-
-
-
-
-
-//shows modal upon click submit//
-  $("#submit").click(function(){
-      $("#myModal").css("display", "block");
-    });
-
-    $(".close").click(function(){
-      $("#myModal").css("display", "none");
-      location.reload();
   });
 });

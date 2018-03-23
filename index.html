@@ -16,6 +16,9 @@
       <form class="epicodus" id="survey">
         <div class="well">
         <h3>Epicodus Track Chooser</h3>
+        <div class="image">
+          <img src="img/epi.jpeg" alt="epicodus classroom" id="epi" width="400">
+        </div>
           <div class="form-group">
             <label for="name">Please enter your name:</label>
             <input type="text" class="form-control" id="name" placeholder="Required" required>
@@ -63,14 +66,8 @@
           </select>
         </div>
         <button class="btn btn-primary" type="submit" id="submit">Submit</button>
-        <div class="image">
-          <img src="img/epi.jpeg" alt="epicodus classroom" id="epi" width="400">
-        </div>
-        <div id="myModal" class="modal">
-          <div class="modal-content">
-            <span class="close">&times;</span>
-            <div class="modal-body">
-            <p> Thanks for your interest <span id=nameprint></span>. We recommend that you follow a <span id="outputTrack"></span> track </p>
+
+            <div id="outputTrack" class="jumbotron">
             </div>
           </div>
         </div>
