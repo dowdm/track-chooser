@@ -22,12 +22,16 @@ $(document).ready(function(){
     } else {
       $("#outputTrack").text("Java/Android");
     }
-// extra time features: username and fading//
+// extra time features: username and fading. the fadetoggle is a little sticky since the page doesn't auto refresh//
 
     $("#outputTrack").append(perfect);
     $("#outputTrack").append(userName);
     $("#submit").click(function() {
-        $("#outputTrack").fadeToggle("#outputTrack");
+      $("#outputTrack").fadeToggle("#outputTrack");
+      $("#retry").show();
+      $("#retry").click(function() {
+        location.reload();
+      });
     });
     event.preventDefault();
   });
