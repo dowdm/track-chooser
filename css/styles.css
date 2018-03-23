@@ -1,12 +1,14 @@
 body{
   background-color: #1CB5B2;
 }
+
 button {
   background-color: #1CB5B2;
   color: white;
 }
+
 .container {
-  background-color: black;
+  background-color: #4B4B4B;
   color: white;
   padding-bottom: 40px;
 }
@@ -14,10 +16,11 @@ button {
 h3  {
   font-size: 60px;
   text-align: center;
-
 }
+
 .jumbotron {
   color: black;
+  display: none;
   font-size: 36px;
   margin-top: 20px;
   text-align: center;
