@@ -11,22 +11,19 @@ $(document).ready(function(){
 //logic for determining course//
   // $("#nameprint").text(userName);
 
-    if (userLike === 1) {
-      if (userAffinity ===  3){
-        $("#outputTrack").text("C#/.NET");
-      } else {
-        $("#outputTrack").text("CSS/React");
-      }
-    } else if (userLike === 2) {
-        if (userAffinity === 3) {
-          $("#outputTrack").text("Ruby/Rails");
-        } else {
-          $("#outputTrack").text("CSS/React");
-        }
+    if (userLike === 1 && userAffinity === 3) {
+      $("#outputTrack").text("C#/.NET");
+    } else if (userLike === 1 && userAffinity !== 3) {
+      $("#outputTrack").text("C#/.NET");
+    } else if (userLike === 2 && userAffinity === 3) {
+      $("#outputTrack").text("Ruby/Rails");
+    } else if (userLike === 2 && userAffinity === 1) {
+      $("#outputTrack").text("CSS/React");
+    } else if (userLike === 3 && userArt === 1) {
+      $("#outputTrack").text("CSS/React");
     } else {
-          $("#outputTrack").text("Java/Android");
-        }
-
+      $("#outputTrack").text("Java/Android");
+    }
 
     event.preventDefault();
   });
