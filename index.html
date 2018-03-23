@@ -18,47 +18,43 @@
           <input type="text" class="form-control" id="name" placeholder="Required" required>
         </div>
         <div class="form-group">
-          <label for="phrase"></label>
-          <select class="form-control" id="phrase">
-            <option value="10">"Go f**k yourself"</option>
-            <option value="30">"Giggity"</option>
-            <option value="20">"Silence"</option>
-            <option value="40">"Shut up, Meg!"</option>
+          <label for="art">How artistic are you, visually?</label>
+          <select class="form-control" id="art">
+            <option value="10">"Everything MUST be beautiful!"</option>
+            <option value="30">"I like things to look nice."</option>
+            <option value="20">"Meh. I don't really care."</option>
           </select>
         </div>
         <div class="form-group">
-          <label for="gender">What do you identify most as/with?</label>
-          <select class="form-control" id="gender">
-            <option value="30">Man</option>
-            <option value="20">Woman</option>
-            <option value="10">Canine</option>
+          <label for="leftright">Do you consider yourself more of a left brain or right brain individual?</label>
+          <select class="form-control" id="leftright">
+            <option value="30">Left: Numbers, Logic, and Analytics are for me.</option>
+            <option value="20">Right: Creativity, Imagination, and Expression are best describe me.</option>
           </select>
         </div>
         <div class="form-group">
-          <label for="pastime">Favorite pastime:</label>
-          <select class="form-control" id="pastime">
-            <option value="40">Drinking beer</option>
-            <option value="20">Sex</option>
-            <option value="10">Plotting my mother's death</option>
-            <option value="40">"Shut up, Meg!"</option>
+          <label for="career">Ideal career:</label>
+          <select class="form-control" id="career">
+            <option value="40">Online database applications developer</option>
+            <option value="20">Mobile application developer</option>
+            <option value="10">Interactive web designer</option>
+            <option value="40">Back-end VR game developer</option>
           </select>
         </div>
         <div class="form-group">
-          <label for="iq">How would you describe your IQ?</label>
-          <select class="form-control" id="iq">
-            <option value="10">I'm a genius</option>
-            <option value="20">More favorably than it deserves.</option>
-            <option value="40">What's an IQ?</option>
-            <option value="10">"Giggity""</option>
+          <label for="dislike">Do you dislike any of the follwoing companies or their products?<em>(Choose One)</em></label>
+          <select class="form-control" id="dislike">
+            <option value="10">Microsoft</option>
+            <option value="20">Facebook</option>
+            <option value="40">Google</option>
           </select>
         </div>
         <button class="btn btn-primary" type="submit" id="submit">Submit</button>
         <div id="myModal" class="modal">
         <div class="modal-content">
           <span class="close">&times;</span>
-          <h3>Your spirit character is:</h3>
-          <h2 id="outputName"></h2>
-          <img src="" alt="" id="outputImg">
+          <h3></h3>
+          <h2 id="outputTrack"></h2>
         </div>
       </div>
       </form>
