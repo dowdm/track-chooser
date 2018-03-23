@@ -9,12 +9,11 @@ $(document).ready(function(){
     var userName = $("#name").val();
 
 //logic for determining course//
-  // $("#nameprint").text(userName);
 
     if (userLike === 1 && userAffinity === 3) {
       $("#outputTrack").text("C#/.NET");
     } else if (userLike === 1 && userAffinity !== 3) {
-      $("#outputTrack").text("C#/.NET");
+      $("#outputTrack").text("CSS/React");
     } else if (userLike === 2 && userAffinity === 3) {
       $("#outputTrack").text("Ruby/Rails");
     } else if (userLike === 2 && userAffinity === 1) {
