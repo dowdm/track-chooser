@@ -7,9 +7,10 @@ $(document).ready(function(){
     var userLike = parseInt($("#like").val());
     var userAffinity = parseInt($("#affinity").val());
     var userName = $("#name").val();
+    var perfect = " is perfect for you, "
 
 //logic for determining course//
-
+  console.log(userName);
     if (userLike === 1 && userAffinity === 3) {
       $("#outputTrack").text("C#/.NET");
     } else if (userLike === 1 && userAffinity !== 3) {
@@ -23,7 +24,8 @@ $(document).ready(function(){
     } else {
       $("#outputTrack").text("Java/Android");
     }
-
+    $("#outputTrack").append(perfect);
+    $("#outputTrack").append(userName);
     event.preventDefault();
   });
 });
