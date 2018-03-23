@@ -24,8 +24,11 @@ $(document).ready(function(){
           $("#outputTrack").text("CSS/React");
         }
     } else {
+        if (userArt !== 1)
         $("#outputTrack").text("Java/Android");
-        }
+      } else {
+        $("#outputTrack").text("CSS/React");
+      }
 
     event.preventDefault();
   });

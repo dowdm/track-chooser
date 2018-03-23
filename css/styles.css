@@ -1,6 +1,7 @@
 .container {
   background-color: black;
   color: white;
+  padding-bottom: 40px;
 }
 
 #myModal {
@@ -10,7 +11,7 @@
   width: 50%;
 
 }
-* The Modal (background) */
+/** The Modal (background) */
 .modal {
   display: none; /* Hidden by default */
   color: black;
@@ -23,4 +24,9 @@
   overflow: auto; /* Enable scroll if needed */
   background-color: rgb(0,0,0); /* Fallback color */
   background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}*/
+
+img {
+  float: right;
+  margin-top: 20 px;
 }
